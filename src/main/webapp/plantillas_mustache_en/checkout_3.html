@@ -1,0 +1,40 @@
+<div>make an order - Pass 3</div>
+
+<div>order resume:</div>
+
+<div>products of the order:</div>
+<div id="productos_pedido">
+	{{#ordenadores}}
+		<div style="margin: 10px;">
+			type: {{tipo}} <br>
+			<img height="60px" src="subidas/{{ordenador_id}}.jpg"/> <br>
+			model: {{modelo}} <br>
+			brand: {{marca}} <br>
+			processor: {{procesador}} <br>
+			graphics: {{grafica}} <br>
+			ram: {{ram}} <br>
+			cuantity: {{cantidad}} <br>
+			price/unit: {{precio}}
+		</div>
+	{{/ordenadores}}
+</div>
+
+<div>order info:</div>
+<div id="datos_envio" style="margin: 10px">
+	complete name: {{nombreCompleto}} <br>
+	address: {{direccion}} <br>
+	country: {{pais}} <br>
+	postal code: {{codigoPostal}} <br>
+	province: {{provincia}} <br>
+</div>
+
+<div>payment info:</div>
+<div id="datos_pago" style="margin: 10px">
+	type of card: {{tipoTarjeta}} <br>
+	card holder: {{titularTarjeta}} <br>
+	card number: {{numeroTarjeta}} <br>
+</div>
+
+<div>
+	<button style="margin: 10px;padding: 10px" id="boton_confirmar_pedido">CONFIRM ORDER</button>
+</div>
